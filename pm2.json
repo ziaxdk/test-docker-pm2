@@ -1,9 +1,12 @@
 {
   "apps": [{
-    "name": "your-app-name",
+    "name": "test-app",
     "script": "index.js",
+	"instances" : "max",
+    "exec_mode" : "cluster",
     "env": {
-      "production": true
+      "production": true,
+      "port": 8080
     }
   }]
 }
